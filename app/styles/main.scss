@@ -1,10 +1,18 @@
 $icon-font-path: '../fonts/';
 
-$grey: #666677;
-$light-grey: #9999AA;
+$title: #666677;
+$subtitle: #9999AA;
+$paragraph: #666677;
+$link: #112277;
+
+$twitter: #55ACEE;
+$github: #4183c4;
+$stackoverflow: #fe7a15;
+$linkedin: #0077b5;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browserupgrade {
@@ -23,7 +31,11 @@ body {
   height: 100%;
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: $grey;
+  color: $paragraph;
+}
+
+a {
+  color: $link;
 }
 
 section {
@@ -52,11 +64,19 @@ section.main {
 
     h1 {
       font-size: 80px;
-      color: $grey;
+      color: $title;
     }
     h2 {
       font-size: 30px;
-      color: $light-grey;
+      color: $subtitle;
+    }
+
+    a {
+      i { margin: 10px; }
+      i.fa-twitter:hover { color: $twitter; }
+      i.fa-github:hover { color: $github; }
+      i.fa-stack-overflow:hover { color: $stackoverflow; }
+      i.fa-linkedin:hover { color: $linkedin; }
     }
   }
 }
