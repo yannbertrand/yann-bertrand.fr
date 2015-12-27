@@ -61,10 +61,12 @@ section.main {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
+    margin-top: 0px;
 
     h1 {
       font-size: 80px;
       color: $title;
+      margin-top: 0px;
     }
     h2 {
       font-size: 30px;
