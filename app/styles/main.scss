@@ -1,8 +1,9 @@
 $icon-font-path: '../fonts/';
 
-$title: #666677;
-$subtitle: #9999AA;
-$paragraph: #666677;
+$h1: #666677;
+$h2: #9999AA;
+$h3: #666677;
+$paragraph: #777788;
 $link: #112277;
 
 $twitter: #55ACEE;
@@ -65,12 +66,12 @@ section.main {
 
     h1 {
       font-size: 80px;
-      color: $title;
+      color: $h1;
       margin-top: 0px;
     }
     h2 {
       font-size: 30px;
-      color: $subtitle;
+      color: $h2;
     }
 
     a {
@@ -80,6 +81,12 @@ section.main {
       i.fa-stack-overflow:hover { color: $stackoverflow; }
       i.fa-linkedin:hover { color: $linkedin; }
     }
+  }
+}
+
+section {
+  h3 {
+    color: $h3;
   }
 }
 
